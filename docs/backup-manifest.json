@@ -1,0 +1,244 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 28,
+      "sha256": "7c7e472b0dae01abf85f56a15a109ef48003919f608830be4554afd4005f543f"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 2260,
+      "sha256": "d1b3a1aee52968488ce9ca3d5b066f704394e8ae18674d09c19e37e7dbbba83b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5467,
+      "sha256": "fc95ba1997c778eb378a5559957cbb7a7bffb5bd9371f9d79577d2019c457d4a"
+    },
+    {
+      "path": "artifacts/Aurora-Notes.zip",
+      "bytes": 6068385,
+      "sha256": "45173ccf34802916ddb914bb47cb51c0a79066ca978d68916da58d50e32f0cdc"
+    },
+    {
+      "path": "bin/aurora-notes",
+      "bytes": 5378688,
+      "sha256": "d5dbf7f84810cc9ef9e4a8527f3918b655d7252d5892570acafc38f3543283fb"
+    },
+    {
+      "path": "docs/original-brief.txt",
+      "bytes": 10159,
+      "sha256": "1cb59e6086258da7e633f79029172ac9954228691e53eb16041b25dffd99eed4"
+    },
+    {
+      "path": "docs/verification.log",
+      "bytes": 2808,
+      "sha256": "8d4c63eb69e229e144c9054932032fc61a6381908ab9d4950dc5dc2881d90bfb"
+    },
+    {
+      "path": "fonts/JetBrainsMono-Regular.ttf",
+      "bytes": 273900,
+      "sha256": "a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f"
+    },
+    {
+      "path": "fonts/NotoSans-Bold.ttf",
+      "bytes": 631484,
+      "sha256": "1df075a380fc7cb898acf64c1f7b3b4dd780de3caa860178bf929de35817a913"
+    },
+    {
+      "path": "fonts/NotoSans-Medium.ttf",
+      "bytes": 619976,
+      "sha256": "635d93d1131d791f2576de90b3bb0f7cdf61929906e8420a61b5f7f8e76420bb"
+    },
+    {
+      "path": "fonts/NotoSans-Regular.ttf",
+      "bytes": 621572,
+      "sha256": "478c558ea716033cd60c03438f628dfa75694dcf6b5f6d505a2f05fd2b4f3823"
+    },
+    {
+      "path": "fonts/NotoSerif-Bold.ttf",
+      "bytes": 747144,
+      "sha256": "96656aa5cec8f1d6fd0e804c1fad397e1a1cfa082e6642124e0bda68cd8363ce"
+    },
+    {
+      "path": "fonts/NotoSerif-Italic.ttf",
+      "bytes": 756796,
+      "sha256": "749e80e313ef711f9373c6cce17c72297ef05490b3dcda7967d1d5d90bf1183f"
+    },
+    {
+      "path": "fonts/NotoSerif-Medium.ttf",
+      "bytes": 732392,
+      "sha256": "afed2854f24565479063b854b22a21ec88673d9413fd3eb7a5b2a3b00f4dd64b"
+    },
+    {
+      "path": "fonts/NotoSerif-Regular.ttf",
+      "bytes": 712444,
+      "sha256": "19e72cd8d595fae5bd74a5206f5d938512e1183d4fed7abb1ec1be1d7efa5f88"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4517,
+      "sha256": "fab6a5256cc65d2986a794541fd24c7888a6f754664d4ed0a09f7bdf2c28d31c"
+    },
+    {
+      "path": "previews/commands.png",
+      "bytes": 133717,
+      "sha256": "c864e06a005c603be9dd61c28cd7508e08e0f7942a4e3044b7124681260cc593"
+    },
+    {
+      "path": "previews/compact.png",
+      "bytes": 92347,
+      "sha256": "2e24d142e2a20d9882d4e9d8bd6bd53953ee32fd526afd0a8f771d9f12871507"
+    },
+    {
+      "path": "previews/dark.png",
+      "bytes": 170377,
+      "sha256": "30cffb6c46e167ddcbc1e686551025a76c7c05aa8fa7f80bfc201de163c1592b"
+    },
+    {
+      "path": "previews/light.png",
+      "bytes": 171249,
+      "sha256": "7c091571213f3a9ead81705c425e6a634e7da9664071834bb16684547429d6b8"
+    },
+    {
+      "path": "previews/settings.png",
+      "bytes": 130541,
+      "sha256": "9991d66942811360efb69fb438d7120c6a6e6945e5afe0e7bcedd45e303a8106"
+    },
+    {
+      "path": "previews/ultrawide.png",
+      "bytes": 195516,
+      "sha256": "106488afbaecbe38e001168220a185195c859863debf1f11f5f7e740fc50c0b5"
+    },
+    {
+      "path": "qml/AppShell.qml",
+      "bytes": 13383,
+      "sha256": "1132cc45039e0066e1cbd9f9aa4b0a3a2bff9fe3ee128e8d5a0f228cfa547a48"
+    },
+    {
+      "path": "qml/AuroraButton.qml",
+      "bytes": 1800,
+      "sha256": "a0810e2d82744119291e185bed185d1d1a35d27c5f54f21030da31c72cb76cf8"
+    },
+    {
+      "path": "qml/AuroraMenu.qml",
+      "bytes": 468,
+      "sha256": "b929e896b512c43725f95b291187162633c987489c67c28a8e234a7f4eb049b6"
+    },
+    {
+      "path": "qml/AuroraMenuItem.qml",
+      "bytes": 1634,
+      "sha256": "49cb62258c7b0cca8a0c05f06d8d0b89cb50b24c2ca3418d58be454920802cfc"
+    },
+    {
+      "path": "qml/AuroraMenuSeparator.qml",
+      "bytes": 270,
+      "sha256": "1a78fce386bf07f947ac565dd267b7b707308fce8704090c44e3030f454b38f8"
+    },
+    {
+      "path": "qml/AuroraToolTip.qml",
+      "bytes": 799,
+      "sha256": "2ab3c85bb9872ade250bf8c5d52c4769c3de00f27bdf911415bd51aed969b6b7"
+    },
+    {
+      "path": "qml/CommandPalette.qml",
+      "bytes": 10668,
+      "sha256": "d01ab9c8ec4cb91b551e65dcd56b4e7d2502a91f08d0cf0cefa9282afcbf0f57"
+    },
+    {
+      "path": "qml/EditorToolbar.qml",
+      "bytes": 3477,
+      "sha256": "3a4881a3ba87ea331a94049bec8b7b665a25db41c69f0cfa4c7a4726cc4c43d2"
+    },
+    {
+      "path": "qml/EditorView.qml",
+      "bytes": 20597,
+      "sha256": "d62b7fa28e9cae3767f84c768032366b7ff4a5ef98f198831e14426cb29590a3"
+    },
+    {
+      "path": "qml/Icon.qml",
+      "bytes": 4557,
+      "sha256": "4052cca7338ebf1e5f83bf27337e701652481c21dcfb83afcdc9c93f042c8148"
+    },
+    {
+      "path": "qml/NoteDelegate.qml",
+      "bytes": 3848,
+      "sha256": "91dd7f86f978fc227dfa92881227f7a63340914240a3a6d439a0dbeaaf45f5ff"
+    },
+    {
+      "path": "qml/NoteList.qml",
+      "bytes": 10823,
+      "sha256": "34d50994d2cdfcb48711210d871e53827ebf2b0bef8fb9a76f35dcb5e84581cc"
+    },
+    {
+      "path": "qml/SettingsDialog.qml",
+      "bytes": 23072,
+      "sha256": "882eec5484acebc6eb9e48a0221de20e3d119a13b5dc91a29a1b47cf1da444cf"
+    },
+    {
+      "path": "qml/Sidebar.qml",
+      "bytes": 10259,
+      "sha256": "fd4ebe12163c1df8c41840b3c3ef85ff6933ae5efd9a2a7218ea2c0386427696"
+    },
+    {
+      "path": "qml/Theme.qml",
+      "bytes": 2745,
+      "sha256": "df970952c811943274bc54e9ff0519975af1e1478fc12d11eda6f4283dd48e54"
+    },
+    {
+      "path": "qml/ThinScrollBar.qml",
+      "bytes": 504,
+      "sha256": "958313ae27a911b8fecd328ca4d6d1c68c197acf42b80176837c1338ab55feeb"
+    },
+    {
+      "path": "qml/Toast.qml",
+      "bytes": 2159,
+      "sha256": "6c3ed009f8161e3fe2138e72fc4eacdfe77df2e4c6adf225f4bbe58468910fe0"
+    },
+    {
+      "path": "qml/qmldir",
+      "bytes": 30,
+      "sha256": "8a9e1301a00c98c76b795513d7ea8f550f6c16b5c3ab662b40e158412009f546"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 356,
+      "sha256": "27b5f00acb754454395e4b8057d3eac79849f2a7508185759e00b7d8769d2a51"
+    },
+    {
+      "path": "src/DocumentHandler.cpp",
+      "bytes": 9392,
+      "sha256": "be7a7882e96e28e702687e5c652e9de45a89ebcb18d1c29f1e4c9a4c3bc59742"
+    },
+    {
+      "path": "src/DocumentHandler.h",
+      "bytes": 2403,
+      "sha256": "f04d09803fd05d29fdc427c916913f5ede670dfb6918f34b8c6e0fe27828cf34"
+    },
+    {
+      "path": "src/NotesStore.cpp",
+      "bytes": 19402,
+      "sha256": "766c298e7b314736ebebf27da32d13d052ab94d8886f3a6a5cf3023d3431bebd"
+    },
+    {
+      "path": "src/NotesStore.h",
+      "bytes": 4860,
+      "sha256": "17e69aecc45b326ce11a04b2451c869988a9413375cdc9c1a64b1b14660b944b"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 2459,
+      "sha256": "18a188f023d1e521cc79dc2469a8307554c7aabbf02f1d5ee8ab51d064285f3f"
+    },
+    {
+      "path": "tests/tst_interface.cpp",
+      "bytes": 6904,
+      "sha256": "2ce86b66474d97cc9bea3a49a7b41f0b4fd95908734ae73f7de9ab21913c9ad8"
+    },
+    {
+      "path": "tests/tst_notesstore.cpp",
+      "bytes": 8756,
+      "sha256": "a234b5ba515f9ef9e6e359eb8692e21f6df9ae2b9c51c165081654c106f37328"
+    }
+  ]
+}

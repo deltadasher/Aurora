@@ -1,0 +1,573 @@
+Create **“Aurora Notes”** — a polished desktop notes and knowledge app built with **Qt 6 + QML/Qt Quick**.
+
+This is a **frontend quality benchmark**. The goal is not algorithmic complexity. The goal is to evaluate whether the implementation can produce a desktop interface that feels coherent, finished, visually refined, responsive, and genuinely pleasant to use.
+
+The app should look like a real premium product rather than a Qt demo.
+
+── Platform ──
+
+- Qt 6.
+- Prefer QML/Qt Quick with a small C++ backend only where useful.
+- No web views or embedded HTML.
+- No external UI frameworks.
+- The app should run with seeded demo data immediately.
+- Support desktop resizing from roughly 900×650 up to ultrawide layouts.
+- Respect high-DPI scaling.
+- Use smooth 60 fps animations.
+- Avoid default Qt control styling unless thoroughly customized.
+
+── Overall visual direction ──
+
+Design a warm, modern desktop interface with a restrained editorial feel.
+
+Dark theme colors:
+
+- Window background: `#111315`
+- Sidebar: `#171A1D`
+- Raised surface: `#1D2125`
+- Hover surface: `#24292E`
+- Border: `#2D3339`
+- Primary text: `#F2F0EB`
+- Secondary text: `#A5A29C`
+- Muted text: `#77746F`
+- Accent: `#DFA56B`
+
+The interface should feel soft and tactile without becoming glassy or overly rounded.
+
+Use:
+
+- 1 px separators
+- subtle shadows only where elevation matters
+- corner radii between 6 and 12 px
+- consistent spacing
+- small restrained transitions
+- strong text hierarchy
+- generous breathing room
+
+Avoid:
+
+- giant floating cards everywhere
+- excessive gradients
+- neon accents
+- fake futuristic styling
+- oversized headings
+- inconsistent paddings
+- default blue Qt focus visuals
+- random icon styles
+
+── Main layout ──
+
+Desktop layout has three primary columns:
+
+1. navigation sidebar
+2. note list
+3. editor
+
+At wide sizes:
+
+- sidebar: ~220 px
+- note list: ~300 px
+- editor fills remaining space
+
+At narrower widths:
+
+- sidebar collapses to icons around 1000 px
+- note list can collapse below ~820 px
+- editor always receives priority
+
+Resizing must remain graceful.
+
+No text overlap.
+No controls disappearing.
+No giant empty gaps.
+
+── Left sidebar ──
+
+Top area:
+
+small app mark
+
+title:
+
+**Aurora**
+
+Below it:
+
+- All Notes
+- Favorites
+- Recent
+- Archive
+
+Then a section label:
+
+**WORKSPACES**
+
+Workspace entries:
+
+- Personal
+- Design
+- Research
+- Ideas
+
+Each item has:
+
+- simple line icon
+- label
+- optional note count
+
+Selected item should use:
+
+- slightly brighter background
+- accent-colored left indicator
+- brighter icon/text
+
+Do not use oversized pills.
+
+Bottom area:
+
+- Settings
+- compact user/avatar button
+
+Hover states should fade smoothly in roughly 100 ms.
+
+── Note list ──
+
+Header:
+
+**Design**
+
+Under it:
+
+search field with placeholder:
+
+“Search notes…”
+
+Beside search:
+
+small filter button
+
+Below:
+
+a vertically scrollable note list.
+
+Each note item contains:
+
+- title
+- two-line preview
+- last edited time
+- optional tiny favorite icon
+
+Example notes:
+
+- Visual Rhythm
+- Landing Page Ideas
+- Typography Notes
+- Motion References
+- Component Audit
+- Portfolio Structure
+- Color Studies
+
+Selected note should have:
+
+- elevated background
+- subtle accent line
+- brighter title
+
+Hover should not change the size of the row.
+
+Right-click context menu:
+
+- Rename
+- Duplicate
+- Favorite
+- Move to…
+- Archive
+
+The scrollbar should be thin and custom styled.
+
+── Editor header ──
+
+Top-left:
+
+editable title:
+
+**Visual Rhythm**
+
+Below:
+
+metadata:
+
+`Edited 12 min ago · Design`
+
+Top-right:
+
+- Favorite icon
+- Share button
+- More menu
+
+Then a thin divider.
+
+Toolbar below:
+
+- Bold
+- Italic
+- Heading
+- Quote
+- Bulleted list
+- Numbered list
+- Code
+- Link
+
+Toolbar buttons should be compact and consistent.
+
+Selected formatting states should be clearly visible without becoming loud.
+
+── Main editor ──
+
+Show realistic seeded content.
+
+Example:
+
+# Visual Rhythm
+
+Good interfaces rarely feel evenly spaced.
+
+The most important elements often sit inside larger pockets of space, while related controls live closer together.
+
+Then include:
+
+- a short bullet list
+- a quote block
+- a small inline code snippet
+- a highlighted sentence
+- a horizontal divider
+- another paragraph
+
+Typography should be the visual star of the app.
+
+Use:
+
+- comfortable line height
+- readable measure
+- clear heading hierarchy
+- subtle paragraph spacing
+- slightly different styling for quotes and code
+
+The editor column should not stretch text across the entire screen on ultrawide displays.
+
+Use a maximum readable text width around 760–820 px.
+
+Center the text area naturally within the editor region.
+
+── Selection interaction ──
+
+Selecting text should reveal a small floating formatting toolbar.
+
+Include:
+
+- Bold
+- Italic
+- Highlight
+- Link
+
+The toolbar should appear close to the selection without covering it.
+
+Animate with:
+
+- opacity
+- 4–6 px upward movement
+- subtle scale from ~0.98
+
+Dismiss when selection disappears.
+
+── Command palette ──
+
+Ctrl/Cmd + K opens a command palette.
+
+Centered modal surface.
+
+Placeholder:
+
+“Search commands…”
+
+Commands:
+
+- New note
+- Search notes
+- Toggle sidebar
+- Toggle note list
+- Switch theme
+- Open settings
+- Archive note
+
+Keyboard:
+
+- Up/Down
+- Enter
+- Escape
+
+Palette should feel polished and intentional.
+
+Backdrop should darken slightly.
+
+No dramatic blur required.
+
+── New note interaction ──
+
+Pressing Ctrl/Cmd + N creates a new note.
+
+The note should appear at the top of the list.
+
+Editor title begins focused.
+
+Placeholder title:
+
+“Untitled”
+
+Body placeholder:
+
+“Start writing…”
+
+The new item should animate into the note list with a subtle fade and height transition.
+
+── Theme switch ──
+
+Add a light theme.
+
+Suggested colors:
+
+- background: `#F3F1EC`
+- sidebar: `#EBE8E1`
+- raised surface: `#FFFFFF`
+- primary text: `#1E2023`
+- secondary text: `#6F6D68`
+- border: `#D9D5CE`
+- accent: `#B86F3C`
+
+Switching theme should transition colors smoothly over roughly 150–200 ms.
+
+The light theme must feel designed, not inverted.
+
+── Settings panel ──
+
+Settings opens as a centered modal or separate page.
+
+Sections:
+
+Appearance
+
+Editor
+
+Behavior
+
+Appearance:
+
+Theme
+- Dark
+- Light
+- System
+
+Density
+- Comfortable
+- Compact
+
+Accent
+- Warm
+- Blue
+- Green
+
+Editor:
+
+Font size slider
+
+Line height slider
+
+Show line width guide toggle
+
+Behavior:
+
+Autosave toggle
+
+Open last workspace toggle
+
+Confirm before archive toggle
+
+Controls should be custom styled and consistent with the rest of the app.
+
+── Interaction states ──
+
+Every interactive control must include:
+
+- normal
+- hover
+- pressed
+- focused
+- disabled
+- selected where applicable
+
+Focus states must be visible but subtle.
+
+Press states should react immediately.
+
+Avoid layout shifts between states.
+
+Do not make text bold on hover if it changes element width.
+
+── Motion ──
+
+Animations should be restrained.
+
+Typical durations:
+
+- hover: 100–140 ms
+- panel collapse: 180–220 ms
+- modal open: 160–200 ms
+- theme transition: ~180 ms
+- list insertion: ~180 ms
+
+Use ease-out curves.
+
+Avoid springy or playful motion.
+
+The app should feel calm and fast.
+
+── Small polish details ──
+
+Include:
+
+- smooth icon hover transitions
+- subtle pressed movement of buttons by ~1 px
+- animated sidebar collapse
+- editable note title with integrated focus style
+- toast notification after archiving
+- tooltip delay on icon-only buttons
+- empty search state
+- empty workspace state
+- proper text elision
+- custom scrollbars
+- keyboard focus navigation
+- smooth theme transitions
+- cursor changes where appropriate
+- clear draggable resize boundaries if split panes are used
+
+Example toast:
+
+“Note archived”
+
+Toast should appear near the bottom-right.
+
+Fade in.
+Stay briefly.
+Fade out.
+
+── Responsive behavior ──
+
+At wide widths:
+
+sidebar + note list + editor visible.
+
+Below ~1050 px:
+
+sidebar collapses to icons.
+
+Below ~820 px:
+
+note list collapses.
+
+A toolbar button should restore collapsed panels.
+
+Transitions must be smooth.
+
+The editor should never feel squeezed.
+
+── Accessibility ──
+
+- logical Tab order
+- visible keyboard focus
+- readable contrast
+- accessible labels for icon-only buttons
+- no information communicated only by color
+- keyboard shortcuts for primary actions
+
+── Architecture ──
+
+Split the QML into sensible reusable components.
+
+Suggested structure:
+
+AppShell.qml
+Sidebar.qml
+NoteList.qml
+NoteDelegate.qml
+EditorView.qml
+EditorToolbar.qml
+CommandPalette.qml
+SettingsDialog.qml
+Toast.qml
+Theme.qml
+
+Use a central theme object for:
+
+- colors
+- spacing
+- typography
+- radii
+- animation timings
+
+Avoid one giant monolithic QML file.
+
+── Benchmark test sequence ──
+
+The finished app should look polished while performing this sequence:
+
+1. Launch at 1440×900.
+2. Hover several sidebar items.
+3. Switch between three notes.
+4. Search for “type”.
+5. Clear search.
+6. Create a new note.
+7. Type a title.
+8. Select some editor text.
+9. Use the floating formatting toolbar.
+10. Open the command palette.
+11. Toggle the sidebar.
+12. Resize the window narrower.
+13. Reopen the sidebar.
+14. Open Settings.
+15. Switch to light theme.
+16. Change editor font size.
+17. Close Settings.
+18. Archive a note.
+19. Observe the toast.
+20. Resize back to 1440×900.
+
+At every stage, the interface should remain visually coherent.
+
+── Quality bar ──
+
+This benchmark is primarily judging:
+
+- layout judgment
+- spacing consistency
+- typography
+- component styling
+- hover/pressed/focus states
+- animation quality
+- responsive resizing
+- visual hierarchy
+- theme consistency
+- editor polish
+- desktop ergonomics
+- attention to detail
+
+The app should not look like:
+
+- a Qt tutorial
+- a generic admin dashboard
+- an AI-generated pile of rounded cards
+- a default Material template
+- a rough functional prototype
+
+The target is a **small but genuinely finished desktop application**.
+
+A strong implementation should be screenshot-worthy at first launch and still look good after resizing, changing theme, opening menus, editing content, and moving through different interaction states.

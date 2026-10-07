@@ -1,0 +1,57 @@
+Start testing: Oct 07 10:06 GMT
+----------------------------------------------------------
+1/2 Testing: notesstore
+1/2 Test: notesstore
+Command: "/home/delta/Documents/Codex/2026-10-01/files-pasted-by-the-user-create-8/work/build/tst_notesstore"
+Directory: /home/delta/Documents/Codex/2026-10-01/files-pasted-by-the-user-create-8/work/build
+"notesstore" start time: Oct 07 10:06 GMT
+Output:
+----------------------------------------------------------
+********* Start testing of NotesStoreTest *********
+Config: Using QtTest library 6.11.2, Qt 6.11.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), obarun unknown
+PASS   : NotesStoreTest::initTestCase()
+PASS   : NotesStoreTest::seededWorkspaceAndSearch()
+PASS   : NotesStoreTest::creatingClearsFiltersAndRestoresSiblings()
+PASS   : NotesStoreTest::editAndDuplicate()
+PASS   : NotesStoreTest::favoriteFiltering()
+PASS   : NotesStoreTest::moveArchiveAndRestore()
+PASS   : NotesStoreTest::markdownExport()
+PASS   : NotesStoreTest::sortingTracksEdits()
+PASS   : NotesStoreTest::persistenceRoundTrip()
+PASS   : NotesStoreTest::cleanupTestCase()
+Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 41ms
+********* Finished testing of NotesStoreTest *********
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"notesstore" end time: Oct 07 10:06 GMT
+"notesstore" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: interface
+2/2 Test: interface
+Command: "/home/delta/Documents/Codex/2026-10-01/files-pasted-by-the-user-create-8/work/build/aurora-interface-tests"
+Directory: /home/delta/Documents/Codex/2026-10-01/files-pasted-by-the-user-create-8/work/build
+"interface" start time: Oct 07 10:06 GMT
+Output:
+----------------------------------------------------------
+********* Start testing of InterfaceTest *********
+Config: Using QtTest library 6.11.2, Qt 6.11.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), obarun unknown
+PASS   : InterfaceTest::initTestCase()
+QWARN  : InterfaceTest::benchmarkFlow() DelegateModel::cancel: index out range 6 3
+QWARN  : InterfaceTest::benchmarkFlow() DelegateModel::cancel: index out range 4 3
+QWARN  : InterfaceTest::benchmarkFlow() DelegateModel::cancel: index out range 4 3
+PASS   : InterfaceTest::benchmarkFlow()
+PASS   : InterfaceTest::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 9569ms
+********* Finished testing of InterfaceTest *********
+<end of output>
+Test time =   9.61 sec
+----------------------------------------------------------
+Test Passed.
+"interface" end time: Oct 07 10:06 GMT
+"interface" time elapsed: 00:00:09
+----------------------------------------------------------
+
+End testing: Oct 07 10:06 GMT
